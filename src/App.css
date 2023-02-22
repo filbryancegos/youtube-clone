@@ -51,3 +51,10 @@ body {
 .main__wrap.open {
   left: 300px;
 }
+
+
+
+.react-player {
+  width: 100% !important;
+  height: 70vh !important;
+}

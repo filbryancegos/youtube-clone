@@ -1,6 +1,6 @@
 import React from 'react'
 import { useYouTubeContext } from '../context/Context'
-import { VideoCard } from './'
+import { VideoCard, ChannelCard } from './'
 
 
 export default function Videos() {
@@ -15,6 +15,7 @@ export default function Videos() {
         {videos?.map((item, idx) =>
           <div key={idx}>
             {item.id.videoId && <VideoCard video={item} /> }
+            {item.id.channelId && <ChannelCard channelDetail={item} /> }
           </div>
         )}
         
